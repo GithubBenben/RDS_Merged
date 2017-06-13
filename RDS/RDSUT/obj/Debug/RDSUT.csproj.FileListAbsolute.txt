@@ -21,3 +21,10 @@ D:\Develop\MyProject\RDS\RDSUT\bin\Debug\zh-Hans\Microsoft.VisualStudio.QualityT
 D:\Develop\MyProject\RDS\RDSUT\obj\Debug\RDSUT.csprojResolveAssemblyReference.cache
 D:\Develop\MyProject\RDS\RDSUT\obj\Debug\RDSUT.dll
 D:\Develop\MyProject\RDS\RDSUT\obj\Debug\RDSUT.pdb
+D:\00_rdbio\01_RDS\01_Software\RDS\RDS\RDSUT\bin\Debug\RDSUT.dll
+D:\00_rdbio\01_RDS\01_Software\RDS\RDS\RDSUT\bin\Debug\RDSUT.pdb
+D:\00_rdbio\01_RDS\01_Software\RDS\RDS\RDSUT\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\00_rdbio\01_RDS\01_Software\RDS\RDS\RDSUT\bin\Debug\zh-Hans\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\00_rdbio\01_RDS\01_Software\RDS\RDS\RDSUT\obj\Debug\RDSUT.csprojResolveAssemblyReference.cache
+D:\00_rdbio\01_RDS\01_Software\RDS\RDS\RDSUT\obj\Debug\RDSUT.dll
+D:\00_rdbio\01_RDS\01_Software\RDS\RDS\RDSUT\obj\Debug\RDSUT.pdb

@@ -1077,6 +1077,7 @@ namespace RdCore
                     heatingSlot1 = SLayoutManager.CurrentLayout.GetSlotByName("RD_Heating1:RD_Heating_CupSlot1");
                     heatingSlot2 = SLayoutManager.CurrentLayout.GetSlotByName("RD_Heating1:RD_Heating_CupSlot2");
                     heatingSlot3 = SLayoutManager.CurrentLayout.GetSlotByName("RD_Heating1:RD_Heating_CupSlot3");
+                    heatingSlot4 = SLayoutManager.CurrentLayout.GetSlotByName("RD_Heating1:RD_Heating_CupSlot4");
                     magSlot1 = SLayoutManager.CurrentLayout.GetSlotByName("RD_Mag1:RD_Mag_CupSlot1");
                     magSlot2 = SLayoutManager.CurrentLayout.GetSlotByName("RD_Mag1:RD_Mag_CupSlot2");
                     magSlot3 = SLayoutManager.CurrentLayout.GetSlotByName("RD_Mag1:RD_Mag_CupSlot3");
@@ -2791,12 +2792,12 @@ namespace RdCore
             #endregion VolumeBand
 
             SDetectionClass dc = Workbench.DetectionManager.GetDetectionClass("Default");
+            SPipettingPar SysAir = Workbench.GetAirPar(vb.SystemAirgap);
             SPipettingPar aspLiquid = Workbench.GetAspVolumePar(volume + vb.SpitBack, vb); //实际吸液体积需加上SpitBack；
             SPipettingPar TransAir = Workbench.GetAirPar(vb.TransportationAirgap);
             SPipettingPar Spit = Workbench.GetAspVolumePar(vb.SpitBack, vb);
-            SDetectionPar DetPar = dc.DetectionParameters;
             SMixPar MixPar = new SMixPar();
-            SPipettingPar SysAir = Workbench.GetAirPar(vb.SystemAirgap);
+            SDetectionPar DetPar = dc.DetectionParameters;
 
             PipMethods.ExecuteTemplate(usedTips, sccCavities,
                 new RdAspTemp(SysAir, aspLiquid, TransAir, Spit, MixPar, DetPar));
@@ -4682,6 +4683,7 @@ namespace RdCore
         private ISlot heatingSlot1;
         private ISlot heatingSlot2;
         private ISlot heatingSlot3;
+        private ISlot heatingSlot4;
         private ISlot magSlot1;
         private ISlot magSlot2;
         private ISlot magSlot3;
@@ -4780,6 +4782,10 @@ namespace RdCore
             else if (heatingSlot3.CurrentItem == null)
             {
                 destination = heatingSlot3;
+            }
+            else if (heatingSlot4.CurrentItem == null)
+            {
+                destination = heatingSlot4;
             }
             else
             {
@@ -6984,6 +6990,6 @@ namespace RdCore
 
         #endregion 移液
 
-        //test
+        
     }
 }
